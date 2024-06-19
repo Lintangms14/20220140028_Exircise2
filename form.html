@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Collab</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Collab</h1>
+        <div class="form-box">
+            <form action="submit.php" method="POST">
+                <label for="Nickname">Nickname:</label>
+                <input type="text" id="Nickname" name="Nickname" required>
+                
+                <label for="deskripsi">Deskripsi:</label>
+                <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+                
+                <label for="id">UID:</label>
+                <input type="text" id="id" name="id" pattern="[0-9]{10,12}" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
